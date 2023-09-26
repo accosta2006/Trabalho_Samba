@@ -8,12 +8,12 @@ services:
     tty: true
     stdin_open: true
     ports:
-      - "11111:139"
-      - "11112:445"
+      - "139:139"
+      - "445:445"
     
     volumes:
-      - ./usr1:/usr1
-      - ./usr2:/usr2
-      - ./public:/public
-      - ./private:/private
-      - ./cfg:/etc/samba
+      - ./usr1:/mnt/usr1
+      - ./usr2:/mnt/usr2
+      - ./public:/mnt/public
+      - ./private:/mnt/private
+      - ./cfg:/etc/
