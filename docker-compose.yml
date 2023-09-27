@@ -12,8 +12,8 @@ services:
       - "445:445"
     
     volumes:
-      - ./usr1:/mnt/usr1
-      - ./usr2:/mnt/usr2
-      - ./public:/mnt/public
-      - ./private:/mnt/private
-      - ./cfg:/etc/
+      - ./usr1:/home/samba/share/usr1
+      - ./usr2:/home/samba/share/usr2
+      - ./public:/home/samba/share/public
+      - ./private:/home/samba/share/private
+      - ./cfg/samba/smb.conf:/etc/samba/smb.conf
